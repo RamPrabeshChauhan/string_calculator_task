@@ -1,24 +1,40 @@
-# README
+# String Calculator TDD Kata
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby on Rails implementation of the String Calculator TDD Kata for the Incubyte TDD Assessment.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+1. Ensure Ruby 3.3.6 and Rails 8.0.2 are installed.
+2. Clone the repository.
+3. Run `bundle install` to install dependencies.
+4. Run `rspec` to execute tests.
 
-* System dependencies
+## Usage
 
-* Configuration
+The calculator is exposed via an API endpoint:
 
-* Database creation
+- **GET /api/v1/calculator/add?numbers=input**
+  - Example: `curl http://localhost:3000/api/v1/calculator/add?numbers=1,2`
+  - Response: `{"result":3}`
 
-* Database initialization
+## Features
 
-* How to run the test suite
+- Handles empty strings (returns 0)
+- Supports single and multiple numbers
+- Allows comma and newline separators
+- Supports custom delimiters (e.g., `//;\n1;2`)
+- Rejects negative numbers with an appropriate error message
 
-* Services (job queues, cache servers, search engines, etc.)
+## Development
 
-* Deployment instructions
+- Tests are written using RSpec.
+- The project follows TDD practices with frequent commits to show evolution.
+- The main logic is in `app/models/string_calculator.rb`.
 
-* ...
+## Screenshots
+
+![Screenshot](docs/image.png)
+
+![Screenshot](docs/image-1.png)
+
+![Screenshot](docs/image-2.png)
