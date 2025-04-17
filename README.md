@@ -33,8 +33,15 @@ The calculator is exposed via an API endpoint:
 
 ## Screenshots
 
-![Screenshot](docs/image.png)
+<img src="docs/image.png" width="100%" />
+<br><br>
+<img src="docs/image-1.png" width="100%" />
+<br><br>
+<img src="docs/image-2.png" width="100%" />
 
-![Screenshot](docs/image-1.png)
+## Final Notes
 
-![Screenshot](docs/image-2.png)
+- The project is complete, meeting all kata requirements.
+- The code is readable, testable, and follows TDD practices.
+- The repository shows the evolution of the solution through commits.
+- The API makes the calculator accessible for practical use.
